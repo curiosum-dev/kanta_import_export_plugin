@@ -8,7 +8,7 @@ defmodule Kanta.ImportExport.Router do
     quote bind_quoted: binding() do
       pipeline :kanta_ie_pipeline do
         plug :accepts, ["json"]
-        # plug KantaWeb.APIAuthPlug
+        plug KantaWeb.APIAuthPlug
         plug MapperPlug, mapper: mapper
       end
 
