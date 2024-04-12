@@ -21,7 +21,10 @@ defmodule Kanta.ImportExport.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:kanta, path: "../kanta", override: true}
+      {:kanta,
+       github: "curiosum-dev/kanta",
+       branch: "feature/add_support_for_multiple_apps",
+       override: true}
     ]
   end
 end
